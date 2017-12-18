@@ -538,6 +538,14 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # --------------------------------------------------------------
+        start = Point(self.start.x, self.start.y)
+        end = Point(self.end.x, self.end.y)
+        start2 = Point(other_line.start.x, other_line.start.y)
+        end2 = Point(other_line.end.x, other_line.end.y)
+        new_startX = start.x + start2.x
+        new_endX = end.x + end2.x
+        new_startY = start.y + start2.y
+        
 
     def line_minus(self, other_line):
         """
