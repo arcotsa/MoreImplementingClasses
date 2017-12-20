@@ -545,7 +545,7 @@ class Line(object):
         new_startX = start.x + start2.x
         new_endX = end.x + end2.x
         new_startY = start.y + start2.y
-        
+
 
     def line_minus(self, other_line):
         """
